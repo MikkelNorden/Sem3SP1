@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+Class Movie {
+- String title
+- LocalDate releaseDate
+- String country
+- ArrayList Genre
+- ArrayList Actor
+- ArrayList Director
+}
+
+Class Genre {
+- String genreName
+}
+
+Class Actor {
+- String name
+- String character
+}
+
+Class Director {
+- String name
+}
+
+Movie *-- Genre
+Movie *-- Actor
+Movie *-- Director
+
+@enduml
